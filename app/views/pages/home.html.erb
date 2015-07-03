@@ -12,9 +12,9 @@
               <nav>
                 <ul class="nav masthead-nav">
                   <li class="active"><%= link_to "Home", root_path %></li>
-                  <li><%= link_to "Free Sign Up", root_path %></li>
-                  <li><%= link_to "Log In", root_path %></li>
-                  <li><%= link_to "About", root_path %></li>
+                  <li><%= link_to "Free Sign Up", new_user_registration_path %></li>
+                  <li><%= link_to "Log In", new_user_session_path %></li>
+                  <li><%= link_to "About", about_path %></li>
                 </ul>
               </nav>
             </div>
@@ -26,7 +26,7 @@
           <div class="cover-container">
             <p class="lead"><b>Sectorscape</b><font size= "4"> is a free collaborative market intelligence platform built for entrepreneurs to research <u>industry landscapes</u>, identify <u>niche verticals</u>, and to share <u>competitor analysis</u>.</font></p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Request Beta</a>
+            <%= link_to "Request Beta", new_user_session_path, class: "btn btn-lg btn-default" %>
             </p>
          
 
